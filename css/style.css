@@ -1,0 +1,328 @@
+h1,
+h2,
+h3 {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h1:hover,
+h2:hover,
+h3:hover {
+    color: #F7941E;
+}
+
+p {
+    font-size: 14px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    color: #444444;
+}
+
+
+/* desktop */
+
+body {
+    width: 998px;
+    margin: 0 auto;
+}
+
+header {
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-style: solid;
+    border-color: transparent transparent #F7941E transparent;
+}
+
+.siteLogo {
+    order: 0;
+    flex-grow: 3;
+}
+
+nav {
+    flex-grow: 1;
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navButton {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.3;
+    padding: 1px 4px 1px 4px;
+}
+
+.navButton:hover {
+    background-color: #F7941E;
+    color: white;
+}
+
+.frontPage {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.frontPageArticles {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.frontPageArticles article {
+    flex-grow: 6;
+}
+
+.frontPageSecondaryArticles {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.frontPageSecondaryArticles article {
+    width: 50%;
+}
+
+.frontPageEvents {
+    flex-grow: 1;
+}
+
+.sectionTitle {
+    padding: 30px 0px 10px 0px;
+    color: #F7941E;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.sectionTitle:hover {
+    color: black;
+}
+
+.articleRow {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.articleRow article {
+    width: 25%;
+}
+
+.miniSections {
+    display: grid;
+    column-gap: 30%;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 50% 50%;
+}
+
+.miniSections section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.miniSections article {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.miniSections article h2 {
+    font-size: 18px;
+}
+
+.miniSections footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.miniSections footer h2 {
+    font-size: 14px;
+    color: #444444;
+    margin: 0 10px 0 10px;
+}
+
+.miniSections footer h2:hover {
+    color: #F7941E;
+}
+
+.miniSections article img {
+    width: 50%;
+    height: 78px;
+}
+
+.miniSectionButton {
+    background-color: #F7941E;
+    color: white;
+    align-self: flex-end;
+    border-style: solid;
+    border-color: #F7941E;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.miniSectionButton:hover {
+    color: #F7941E;
+    background-color: white;
+}
+
+.lastSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lastSectionColumn {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bestOfOrlando {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: left;
+}
+
+.bestOfOrlando img {
+    width: 150px;
+    height: 150px;
+}
+
+.bestOfOrlando nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.orlandoGuides {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 103px 103px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.orlandoGuides img {
+    width: 100%;
+    height: 100%;
+}
+
+.digitalIssue {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.digitalIssue p {
+    align-self: center;
+}
+
+.date {
+    margin-top: -5px;
+}
+
+.lastSectionColumn .miniSectionButton {
+    align-self: center;
+}
+
+.mobileHeaderIcon {
+    display: none;
+}
+
+@media screen and (max-width: 998px) {
+    body {
+        width: 622px;
+        margin: 0 auto;
+    }
+    header {
+        height: 100px;
+        border-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mobileHeaderIcon {
+        display: inline;
+        align-self: center;
+        font-size: 30px;
+    }
+    .siteLogo img {
+        display: inline;
+        width: 100%;
+        align-self: center;
+    }
+    nav {
+        display: none;
+    }
+    .frontPage {
+        flex-direction: column;
+    }
+    .frontPageArticles article {
+        flex-grow: 6;
+        justify-self: center;
+    }
+    .articleRow,
+    .orlandoGuides {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 50% 50%;
+        row-gap: 10px;
+        column-gap: 2%;
+    }
+    .articleRow article {
+        width: 100%;
+    }
+    .desktopOnly {
+        display: none;
+    }
+    .miniSections {
+        display: flex;
+        flex-direction: column;
+    }
+    .miniSections article img {
+        width: 250px;
+        height: 155px;
+    }
+    .lastSection {
+        display: block;
+    }
+    .lastSectionColumn {
+        width: 100%;
+    }
+    .bestOfOrlando img {
+        width: 50%;
+        height: 315px;
+    }
+    .digitalIssue {
+        width: 100%;
+    }
+}
