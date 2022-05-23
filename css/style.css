@@ -261,7 +261,7 @@ nav {
 @media screen and (max-width: 998px) {
     body {
         width: 622px;
-        margin: 0 auto;
+        margin: 110px auto;
     }
     header {
         height: 100px;
@@ -269,15 +269,27 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        position: absolute;
+        left: 0;
+        right: 0;
+        box-shadow: 2px 2px 2px #DDDDDD;
     }
     .mobileHeaderIcon {
         display: inline;
         align-self: center;
-        font-size: 30px;
+    }
+    .material-icons {
+        font-size: 45px !important;
+    }
+    .siteLogo {
+        flex-grow: unset;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 200px;
     }
     .siteLogo img {
+        flex-grow: unset;
         display: inline;
-        width: 100%;
         align-self: center;
     }
     nav {
