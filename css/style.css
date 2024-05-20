@@ -155,6 +155,26 @@ nav {
     flex-grow: 1;
 }
 
+.eventSelectorHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: transparent transparent gray transparent;
+    border-width: 1px;
+    margin-bottom: 14px;
+    margin-top: 20px;
+}
+
+.eventSelectorHeader h3 {
+    color: gray;
+    font-size: 14px;
+}
+
+.eventSelectorHeader h3:hover {
+    color: #F7941E;
+}
+
 .eventSelector {
     display: flex;
     flex-direction: row;
@@ -194,6 +214,7 @@ nav {
 }
 
 .eventSelectorKeywords p {
+    
     color: gray;
 }
 
@@ -384,6 +405,42 @@ nav {
 
 .indexFooter h3:hover {
     color: #F7941E;
+}
+
+.sisterPublications {
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.sisterPublications h2 {
+    font-weight: 200;
+    color: black;
+}
+
+.sisterPublications h3 {
+    font-weight: 200;
+    color: black;
+    font-size: 16px;
+}
+
+.sisterPublications footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sisterPublications img {
+    filter: grayscale(100%);
+}
+
+.sisterPublications img:hover {
+    filter: grayscale(0%);
 }
 
 @media screen and (max-width: 998px) {
