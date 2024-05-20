@@ -39,6 +39,25 @@ body {
     margin: 0 auto;
 }
 
+.supportButton {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    font-size: 14px;
+    padding: 10px 8px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #F7941E; 
+    color: white;
+    border: none;
+}
+
+.supportButton:hover {
+    background-color: #333333; 
+}
+
 header {
     height: 145px;
     display: flex;
