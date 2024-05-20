@@ -288,7 +288,7 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         box-shadow: 2px 2px 2px #DDDDDD;
