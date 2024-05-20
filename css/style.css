@@ -41,7 +41,7 @@ body {
 
 .supportButton {
     position: fixed;
-    top: 50%;
+    top: 75%;
     right: 0;
     writing-mode: vertical-rl;
     transform: rotate(-180deg);
