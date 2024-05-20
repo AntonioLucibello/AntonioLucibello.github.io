@@ -35,8 +35,33 @@ p {
 /* desktop */
 
 body {
-    width: 998px;
+    margin: 0;
+}
+
+main {
+    max-width: 998px;
     margin: 0 auto;
+    padding: 0 10px;
+}
+
+.voteStrip {
+    top: 0;
+    background-color: #F7941E;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.voteStrip p {
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+.voteStrip p span {
+    border: 1px solid #FFFFFF;
+    padding: 5px 20px;
 }
 
 .supportButton {
@@ -168,7 +193,7 @@ nav {
     flex-grow: 10;
 }
 
-.eventSelectorKeywords p{
+.eventSelectorKeywords p {
     color: gray;
 }
 
@@ -182,7 +207,7 @@ nav {
     background-color: white;
 }
 
-.eventSelectorGo:hover{
+.eventSelectorGo:hover {
     color: white;
     background-color: #F7941E;
 }
@@ -362,21 +387,20 @@ nav {
 }
 
 @media screen and (max-width: 998px) {
-    body {
-        width: 622px;
-        margin: 110px auto;
-    }
-
     header {
         height: 100px;
         border-color: transparent;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        position: fixed;
+        position: sticky;
         left: 0;
         right: 0;
-        box-shadow: 2px 2px 2px #DDDDDD;
+        box-shadow: 0px 2px 0px #DDDDDD;
+    }
+
+    .voteStrip {
+        width: 100%;
     }
 
     .mobileHeaderIcon {
