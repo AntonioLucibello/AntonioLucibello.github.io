@@ -443,6 +443,44 @@ nav {
     filter: grayscale(0%);
 }
 
+.contacts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts h2 {
+    color: #333333;
+}
+
+.contacts h3 {
+    color: #333333;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contacts footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+    filter: grayscale(100%);
+    width: 200px;
+}
+
+.finalFooter h2{
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+
+.finalFooter h3{
+    color: black;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 200;
+}
+
 @media screen and (max-width: 998px) {
     header {
         height: 100px;
