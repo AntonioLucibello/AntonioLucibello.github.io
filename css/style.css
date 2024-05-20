@@ -155,6 +155,26 @@ nav {
     flex-grow: 1;
 }
 
+.eventSelectorHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: transparent transparent gray transparent;
+    border-width: 1px;
+    margin-bottom: 14px;
+    margin-top: 20px;
+}
+
+.eventSelectorHeader h3 {
+    color: gray;
+    font-size: 14px;
+}
+
+.eventSelectorHeader h3:hover {
+    color: #F7941E;
+}
+
 .eventSelector {
     display: flex;
     flex-direction: row;
@@ -194,6 +214,7 @@ nav {
 }
 
 .eventSelectorKeywords p {
+    
     color: gray;
 }
 
